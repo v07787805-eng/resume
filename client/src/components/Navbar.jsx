@@ -2,7 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom'
 import { logout } from '../app/features/authSlice.js';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.svg?url';
+
 
 const Navbar = () => {
 
