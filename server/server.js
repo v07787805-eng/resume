@@ -14,9 +14,10 @@ await connectDB()
 
 app.use(express.json())
 app.use(cors({
-  origin: '*', // or frontend URL
+  origin: "https://resume-frontend-em3w.onrender.com",
   credentials: true
 }));
+
 
 app.get('/', (req, res) => res.send("Server is live.."))
 app.use('/api/users', userRouter);
